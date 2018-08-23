@@ -1,18 +1,20 @@
- 
-
+html {
+  height: 100%;
+ }
 body {
     color: rgba(255,255,255,.9);
     text-align: center;
     top: 15%;
     font-family: 'Raleway', serif;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
     /*background: linear-gradient(to right, red , aqua);*/ /* Standard syntax */
-
 }
 header {
 /*width: 50vw;*/
 margin: auto;
 text-transform: uppercase;
-
 }
 .title {
   font-size: 4rem;
@@ -20,7 +22,6 @@ text-transform: uppercase;
   font-weight: 200;
   font-family: 'Oswald', serif;
   margin-bottom: 0px;
-
 }
 input {
   margin: 20px;
@@ -38,7 +39,11 @@ h3 {
   letter-spacing: 0.2rem;
   margin-top: 50px;
 }
-
-h2 {
-
+a {
+  color: #000000;
+}
+.footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 10px;
 }
