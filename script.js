@@ -5,7 +5,7 @@ let color2 = document.querySelector('#color2');
 
 function setGradient () {
   bodyBg.style.background = 'linear-gradient(to right, ' + color1.value + ', ' + color2.value + ')';
-  cssGradient.textContent = 'background: linear-gradient(to right, ' + color1.value + ', ' + color2.value + ')';
+  cssGradient.textContent = 'background: linear-gradient(to right, ' + color1.value + ', ' + color2.value + ');';
 }
 
 bodyBg.onload = setGradient();
