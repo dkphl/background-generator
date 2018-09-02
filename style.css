@@ -14,10 +14,16 @@ body {
 }
 
 .container {
-  background: #fff;
+  background: rgba(255,255,255,.75);
   max-width: 65vw;
   margin: auto;
-  padding: 40px;
+  padding: 50px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    background: rgba(255,255,255,.25);
+  }
 }
 
 header {
@@ -25,16 +31,20 @@ margin: auto;
 text-transform: uppercase;
 }
 
+img {
+  margin-bottom: 20px;
+}
+
 .title {
-  font-size: 4rem;
+  font-size: calc( 28px + (60 - 28) * ( (100vw - 400px) / ( 1600 - 800) ));
   line-height: 4rem;
   font-weight: 200;
   font-family: 'Oswald', serif;
-  margin-bottom: 0px;
+  margin: 0px;
 }
 
 input {
-  
+
 }
 
 .bold {
@@ -55,12 +65,13 @@ h3 {
   margin-top: 50px;
 }
 
-a {
-  color: #ff1cae;
+a, a:visited {
+  font-weight: bold;
+  color: #000;
 }
 
 a:hover, a:active {
-  color: #fff;
+  color: #ff1cae;
 }
 
 .footer {
